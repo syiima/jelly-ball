@@ -9,6 +9,7 @@ body{
     min-height: 100vh;
     background: linear-gradient(-120deg, #deb0df, #a16bfe);
     overflow: hidden;
+    font-family: 'Silkscreen';
 }
 .ball{
     position:relative;
@@ -51,4 +52,21 @@ body{
     50%{
         transform: scale(1);
     }
+}
+.textbox{
+    width: 85%;
+    height: 200px;
+    background: #000;
+    border: 6px solid #fff;
+    position: absolute;
+    top: 70%;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    
+}
+#text{
+    color: #fff;
+    font-size: 2.5em;
+    flex-wrap: wrap;
 }
