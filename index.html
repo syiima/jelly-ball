@@ -3,19 +3,43 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
-        <title>hmmm jelly</title>
+        <title>hmmm orbbbb</title>
         <link href='https://fonts.googleapis.com/css?family=Silkscreen' rel='stylesheet'>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <script src="script.js"></script>
-        <div class="ball"></div>
+        <div onClick="firstText()" class="ball"></div>
         <!-- <div class="shadow"></div> -->
-        <div class="textbox" onClick="firstText()">
+
+        <div class="textbox" id="first">
+            <p class="textbox-name" id="orb-name" style="display:none">Floating Orb:</p>
             <p id="text"></p>
+            <img id="arrow-next" src="./assets/right-arrow.png" class="arrow-next" style="display:none" onClick="goNext()" >
         </div>
-        
+
+        <!-- <div class="textbox">f
+            <input type="text" id="question" name="question" class="input-question">
+        </div> -->
+
+        <div class="textbox" id="second" style="display:none";>
+            <p class="textbox-name">You:</p>
+            <p class="textbox-question" onClick="selectOption()" ><img src="./assets/right-arrow.png">What are you?</p>
+            <p class="textbox-question" onClick="selectOption()" ><img src="./assets/right-arrow.png" >Is this real life?</p>
+            <p class="textbox-question" onClick="selectOption()"><img src="./assets/right-arrow.png">I'm hungry. Gimme food!</p>
+        </div>
+
+        <div class="textbox" id="third" style="display:none">
+            <p class="textbox-name" id="orb-name3">Floating Orb:</p>
+            <p id="text3"></p>
+        </div>
        
+        <!-- <div class="textbox" id="first">
+            <p class="textbox-name" id="orb-name3" style="display:none">Floating Orb:</p>
+            <p id="text"></p>
+            <img id="arrow-next" src="./assets/right-arrow.png" class="arrow-next" style="display:none" onClick="goNext()" >
+        </div> -->
+
     </body>
     
 </html>

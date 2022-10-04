@@ -28,6 +28,10 @@ body{
                 0 0 90px #fff;
     animation: float 3.5s ease-in-out infinite;
 }
+.ball:hover{
+    cursor: pointer;
+}
+
 @keyframes float{
     0%, 100%{
         transform: translateY(0px);
@@ -61,12 +65,64 @@ body{
     position: absolute;
     top: 70%;
     padding: 15px;
-    display: flex;
+    flex-direction: column;
     align-items: center;
     
 }
+.textbox-name{
+    color: #fff;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+}
+.textbox-question{
+    color: #fff;
+    font-size: 1.8em;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+}
+.textbox-question:hover{
+    background-color: rgba(255,255,255,0.4);
+    cursor: pointer;
+}
+
+.textbox-question img{
+    height:24px;
+    width:24px;
+    margin-right: 5px;
+    float: center;
+}  
+/* .textbox-question ::after{
+   
+} */
 #text{
     color: #fff;
-    font-size: 2.5em;
+    font-size: 1.8em;
+    flex-wrap: wrap;
+}
+.arrow-next{
+    height:30px;
+    width:30px;
+    position: absolute;
+    bottom: 15px;
+    right:15px;
+    animation: blink normal 2s infinite ease-in-out;
+    cursor: pointer;
+}
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+#text3{
+    color: #fff;
+    font-size: 1.8em;
     flex-wrap: wrap;
 }
