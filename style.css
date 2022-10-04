@@ -11,7 +11,7 @@ body{
     overflow: hidden;
     font-family: 'Silkscreen';
 }
-.ball{
+.orb{
     position:relative;
     height: 200px;
     width: 200px;
@@ -26,9 +26,9 @@ body{
                 inset -20px -60px 100px #fde9ea,
                 inset 0 50px 140px #fde9ea,
                 0 0 90px #fff;
-    animation: float 3.5s ease-in-out infinite;
+    /* animation: float 3.5s ease-in-out infinite; */
 }
-.ball:hover{
+.orb:hover{
     cursor: pointer;
 }
 
@@ -39,6 +39,10 @@ body{
     50%{
         transform: translateY(-80px);
     }
+}
+.orb-stopper{
+    animation: none !important;
+    transition: none !important;
 }
 .shadow{
     width: 150px;
@@ -126,3 +130,16 @@ body{
     font-size: 1.8em;
     flex-wrap: wrap;
 }
+.cracked-orb{
+    height:60px;
+    width:60px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    margin-top: 10px;
+    animation: fadeIn 1.2s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }

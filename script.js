@@ -11,7 +11,6 @@ function firstText(){
     }
     if(i === text.length){
         document.getElementById('arrow-next').style.display = "block";
-
     }
 }
 
@@ -32,4 +31,9 @@ function thirdText(){
         j++;
         setTimeout(thirdText,70);
     }
+    if(j === text3.length){
+        document.getElementById("orb").classList.add("orb-stopper");
+        document.getElementById('cracked').style.display = "block";
+    }
+        
 }
