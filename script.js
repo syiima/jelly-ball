@@ -3,7 +3,7 @@ text = "Hello! I know you got questions for me. So, go ahead my child. Ask me an
 text3 = "You! What have you done??!!"
 
 function firstText(){
-    document.getElementById('orb-name').style.display = "block";
+    document.getElementById('first').style.display = "block";
     if(i<text.length){
         document.getElementById("text").innerHTML += text.charAt(i);
         i++;
@@ -24,7 +24,6 @@ function selectOption(){
     document.getElementById('second').style.display = "hidden";
     thirdText()
 }
-
 
 function thirdText(){
     document.getElementById('third').style.display = "block";
