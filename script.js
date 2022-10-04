@@ -1,5 +1,5 @@
 var i=0, text, j=0, text3;
-text = "Hello! I know you got questions for me. So, go ahead my child. Ask me anything..."
+text = "I know you have questions for me. So, go ahead my child. Ask me anything..."
 text3 = "You! What have you done??!!"
 
 function firstText(){
@@ -7,7 +7,7 @@ function firstText(){
     if(i<text.length){
         document.getElementById("text").innerHTML += text.charAt(i);
         i++;
-        setTimeout(firstText,90);
+        setTimeout(firstText,80);
     }
     if(i === text.length){
         document.getElementById('arrow-next').style.display = "block";

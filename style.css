@@ -26,7 +26,7 @@ body{
                 inset -20px -60px 100px #fde9ea,
                 inset 0 50px 140px #fde9ea,
                 0 0 90px #fff;
-    /* animation: float 3.5s ease-in-out infinite; */
+    animation: float 3.5s ease-in-out infinite;
 }
 .orb:hover{
     cursor: pointer;
@@ -41,8 +41,8 @@ body{
     }
 }
 .orb-stopper{
-    animation: none !important;
-    transition: none !important;
+    animation: none;
+    transition: none;
 }
 .shadow{
     width: 150px;
@@ -136,7 +136,7 @@ body{
     align-items: center;
     justify-content: center;
     margin-left: 30px;
-    margin-top: 10px;
+    margin-top: 12px;
     animation: fadeIn 1.2s;
 }
 @keyframes fadeIn {
